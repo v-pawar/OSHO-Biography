@@ -1180,3 +1180,496 @@ body {
     }
 
 }
+
+
+
+/* =========================================
+   SECTION 06: OSHO BOOKS
+========================================= */
+
+/* =====================================================
+   SECTION 06: OSHO BOOKS
+===================================================== */
+
+
+/* -----------------------------------------------------
+   06.1 Main Section
+----------------------------------------------------- */
+
+.books-section {
+    padding: 120px 8%;
+    background: #ffffff;
+}
+
+
+/* -----------------------------------------------------
+   06.2 Section Heading
+----------------------------------------------------- */
+
+.books-heading {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.books-heading span {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #999;
+}
+
+.books-heading h2 {
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 400;
+    margin: 18px 0;
+    color: #222;
+}
+
+.books-heading h2 em {
+    font-family: Georgia, serif;
+    color: #a47c5c;
+}
+
+.books-heading p {
+    font-size: 14px;
+    color: #777;
+}
+
+
+/* -----------------------------------------------------
+   06.3 Books Container
+----------------------------------------------------- */
+
+.books-container {
+    display: grid;
+    grid-template-columns: 0.9fr 1.5fr;
+    gap: 50px;
+    align-items: center;
+}
+
+
+/* -----------------------------------------------------
+   06.4 Featured Book
+----------------------------------------------------- */
+
+.featured-book {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+/* Featured Book Cover */
+
+.featured-cover {
+    width: 100%;
+    height: 420px;
+
+    overflow: hidden;
+    border-radius: 8px;
+
+    background: #f5f5f5;
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.10);
+
+    transition: 0.3s ease;
+}
+
+.featured-cover:hover {
+    transform: translateY(-6px);
+}
+
+.featured-cover img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* Featured Book Information */
+
+.book-info span {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #a47c5c;
+}
+
+.book-info h3 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #222;
+
+    margin: 12px 0;
+}
+
+.book-info p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #777;
+
+    max-width: 350px;
+}
+
+
+/* -----------------------------------------------------
+   06.5 Books Grid
+----------------------------------------------------- */
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+    align-items: start;
+}
+
+
+/* Individual Book Card */
+
+.book-card {
+    text-align: center;
+}
+
+
+/* Book Cover */
+
+.book-cover {
+    width: 100%;
+    height: 280px;
+
+    overflow: hidden;
+    border-radius: 8px;
+
+    /* background: #f5f5f5; */
+     /* background: #ffffff; */
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.10);
+
+    transition: 0.3s ease;
+}
+
+.book-cover:hover {
+    transform: translateY(-6px);
+}
+
+.book-cover img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+.featured-cover,
+.book-cover {
+    background: #ffffff;
+}
+
+/* -----------------------------------------------------
+   06.6 Book Details
+----------------------------------------------------- */
+
+.book-details {
+    margin-top: 20px;
+}
+
+.book-details h3 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #222;
+}
+
+.book-details p {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #888;
+
+    margin-top: 8px;
+}
+
+
+/* -----------------------------------------------------
+   06.7 Responsive Design
+----------------------------------------------------- */
+
+@media (max-width: 1000px) {
+
+    .books-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .featured-book {
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .books-section {
+        padding: 80px 6%;
+    }
+
+    .books-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 15px;
+    }
+
+    .featured-cover {
+        height: 350px;
+    }
+
+    .book-cover {
+        height: 230px;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .books-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .book-cover {
+        height: 300px;
+    }
+
+}
+
+
+/* =====================================================
+   SECTION 07: OSHO'S TEACHINGS
+===================================================== */
+
+
+/* -----------------------------------------------------
+   07.1 Main Section
+----------------------------------------------------- */
+
+.teachings-section {
+    padding: 120px 8%;
+    background: #f8f8f8;
+}
+
+
+/* -----------------------------------------------------
+   07.2 Section Heading
+----------------------------------------------------- */
+
+.teachings-heading {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.teachings-heading > span {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #999;
+}
+
+.teachings-heading h2 {
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 400;
+    color: #222;
+    margin: 18px 0;
+}
+
+.teachings-heading h2 em {
+    font-family: Georgia, serif;
+    color: #a47c5c;
+}
+
+.teachings-heading p {
+    font-size: 14px;
+    color: #777;
+}
+
+
+/* -----------------------------------------------------
+   07.3 Teaching Grid
+----------------------------------------------------- */
+
+.teachings-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+
+/* -----------------------------------------------------
+   07.4 Teaching Card
+----------------------------------------------------- */
+
+.teaching-card {
+    position: relative;
+
+    min-height: 300px;
+    padding: 40px;
+
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    transition: all 0.35s ease;
+}
+
+
+/* Card Hover */
+
+.teaching-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+}
+
+
+/* -----------------------------------------------------
+   07.5 Decorative Number
+----------------------------------------------------- */
+
+.teaching-number {
+    position: absolute;
+
+    right: 25px;
+    top: 10px;
+
+    font-family: Georgia, serif;
+    font-size: 150px;
+
+    font-weight: 400;
+
+    color: #f5f1ed;
+
+    line-height: 1;
+
+    pointer-events: none;
+}
+
+
+/* -----------------------------------------------------
+   07.6 Card Content
+----------------------------------------------------- */
+
+.teaching-content {
+    position: relative;
+    z-index: 1;
+
+    max-width: 380px;
+}
+
+.teaching-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+
+    color: #a47c5c;
+}
+
+.teaching-content h3 {
+    font-family: Georgia, serif;
+
+    font-size: 34px;
+    font-weight: 400;
+
+    color: #222;
+
+    margin: 18px 0;
+}
+
+.teaching-content p {
+    font-size: 14px;
+    line-height: 1.8;
+
+    color: #777;
+
+    max-width: 340px;
+}
+
+
+/* -----------------------------------------------------
+   07.7 Explore More Link
+----------------------------------------------------- */
+
+.teaching-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-top: 25px;
+
+    font-size: 12px;
+    letter-spacing: 1px;
+
+    color: #a47c5c;
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.teaching-link span {
+    font-size: 17px;
+    transition: 0.3s ease;
+}
+
+.teaching-link:hover span {
+    transform: translate(4px, -4px);
+}
+
+
+.teaching-card:hover {
+    transform: translateY(-6px);
+    background: #fdfaf7;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+}
+
+/* -----------------------------------------------------
+   07.8 Responsive Design
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+    .teachings-section {
+        padding: 90px 6%;
+    }
+
+    .teachings-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .teaching-card {
+        min-height: 270px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .teaching-card {
+        padding: 30px 25px;
+        min-height: 280px;
+    }
+
+    .teaching-number {
+        font-size: 110px;
+        right: 15px;
+    }
+
+    .teaching-content h3 {
+        font-size: 29px;
+    }
+
+}
