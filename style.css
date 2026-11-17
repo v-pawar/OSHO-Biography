@@ -1,4 +1,3 @@
-/* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 * {
@@ -9,155 +8,1175 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #ffffff;
 }
 
-/* Header */
+/* =====================================================
+   SECTION 01: NAVBAR
+===================================================== */
+
+
+/* HEADER */
+
 .header {
     width: 100%;
     padding: 20px 8%;
+
+    background-color: #ffffff;
+
     border-bottom: 1px solid #eeeeee;
 }
 
-/* Navbar */
+
+/* NAVBAR LAYOUT */
+
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-/* Logo */
+
+/* LOGO */
+
 .logo a {
     text-decoration: none;
-    font-size: 30px;
+
+    font-size: 35px;
     font-weight: 700;
+
+    letter-spacing:6px;
+
     color: #000000;
-    letter-spacing: 2px;
 }
 
 .logo span {
     color: #999999;
 }
 
-/* Navigation Links */
+
+/* NAVIGATION LINKS */
+
 .nav-links {
     display: flex;
     align-items: center;
+
     gap: 35px;
+
     list-style: none;
 }
 
 .nav-links a {
     text-decoration: none;
+
+    font-size: 18px;
     color: #333333;
-    font-size: 14px;
-    transition: 0.3s;
+
+    transition: color 0.3s ease;
 }
+
+
+/* NAVIGATION HOVER */
 
 .nav-links a:hover {
     color: #999999;
 }
 
-/* Explore Button */
+
+/* EXPLORE BUTTON */
+
 .nav-button a {
-    text-decoration: none;
+    display: inline-block;
+
+    padding: 12px 22px;
+
     background-color: #000000;
     color: #ffffff;
-    padding: 12px 22px;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
     border-radius: 4px;
-    font-size: 13px;
-    transition: 0.3s;
+
+    transition: all 0.3s ease;
 }
+
+
+/* BUTTON HOVER */
 
 .nav-button a:hover {
     background-color: #444444;
+    transform: translateY(-2px);
 }
 
 
-/* ==========================
-   HERO SECTION
-========================== */
+/* =====================================================
+   END OF SECTION 01: NAVBAR
+===================================================== */
 
 
-/* HERO SECTION */
+/* =====================================================
+   SECTION 02: HERO SECTION
+===================================================== */
+
+
+/* MAIN HERO CONTAINER */
 
 .hero {
     width: 100%;
-    min-height: calc(100vh - 76px);
+    min-height: calc(100vh - 87px);
 
     display: flex;
     align-items: center;
 
-    padding-left: 7%;
-    overflow: hidden;
+    padding: 60px 8%;
+    gap: 60px;
+
+    background-color: #ffffff;
 }
 
-/* LEFT CONTENT */
+
+/* ----------------------------------
+   02.1 LEFT CONTENT
+---------------------------------- */
 
 .hero-content {
     width: 50%;
-    height: 100%;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    padding: 80px 30px 70px 0;
+    gap: 60px;
 }
+
+
+/* HERO LABEL */
+
+.hero-label {
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+    color: #999999;
+}
+
+
+/* HERO HEADING */
 
 .hero-title h1 {
-    font-size: clamp(70px, 9vw, 130px);
+    max-width: 650px;
+
+    margin-top: 25px;
+
+    font-size: clamp(48px, 5vw, 75px);
     font-weight: 700;
-    letter-spacing: -5px;
-    color: #111;
+
+    line-height: 1.1;
+    letter-spacing: -3px;
+
+    color: #111111;
 }
+
+
+/* HEADING SPAN */
+
+.hero-title h1 span {
+    color: #999999;
+}
+
+
+/* HERO DESCRIPTION */
 
 .hero-title p {
-    font-size: 13px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #888;
-    margin-top: 10px;
-}
+    max-width: 480px;
 
-/* HERO LINKS */
+    margin-top: 25px;
 
-.hero-links {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 22px;
-}
-
-.hero-links a {
-    text-decoration: none;
-    color: #111;
     font-size: 14px;
+    line-height: 1.9;
+
+    color: #777777;
 }
 
-.hero-links .hero-btn {
-    padding: 12px 22px;
-    border: 1px solid #111;
-    transition: 0.3s;
+
+/* ----------------------------------
+   02.2 HERO BUTTON
+---------------------------------- */
+
+.hero-btn {
+    display: inline-block;
+
+    margin-top: 30px;
+    padding: 14px 25px;
+
+    border: 1px solid #111111;
+
+    background-color: #111111;
+    color: #ffffff;
+
+    text-decoration: none;
+    font-size: 13px;
+
+    transition: all 0.3s ease;
 }
 
-.hero-links .hero-btn:hover {
-    background: #111;
-    color: white;
+
+.hero-btn:hover {
+    background-color: #ffffff;
+    color: #111111;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.10);
 }
 
-/* RIGHT IMAGE */
+
+/* ----------------------------------
+   02.3 HERO INFORMATION
+---------------------------------- */
+
+.hero-info {
+    display: flex;
+    gap: 55px;
+}
+
+.hero-info-box h3 {
+    font-size: 24px;
+    font-weight: 700;
+
+    color: #111111;
+}
+
+.hero-info-box span {
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 12px;
+    color: #999999;
+}
+
+
+/* ----------------------------------
+   02.4 RIGHT IMAGE
+---------------------------------- */
+
+
+/* HERO IMAGE CONTAINER */
 
 .hero-image {
-    width: 50%;
-    height: calc(100vh - 76px);
+    width: 46%;
+    max-width: 560px;
+    height: 650px;
+
+    margin-left: auto;
+
+    overflow: hidden;
+    border-radius: 12px;
+
+    border: 1px solid #eeeeee;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.08);
 }
+
+
+/* IMAGE STYLING */
 
 .hero-image img {
     width: 100%;
-    height:100%;
-
-    object-fit: cover;
-    object-position: center;
+    height: 100%;
 
     display: block;
+
+    object-fit:cover;
+    object-position: center;
+        /* Important: Show Osho's Head */
+    object-position: center 15%;
+
+    transition: transform 0.5s ease;
+}
+
+
+/* IMAGE HOVER */
+
+.hero-image:hover img {
+    transform: scale(1.04);
+}
+
+
+/* =====================================================
+   END OF SECTION 02: HERO SECTION
+===================================================== */
+
+
+/* =====================================================
+   SECTION 03: ABOUT OSHO
+===================================================== */
+
+
+/* ----------------------------------
+   03.1 MAIN SECTION
+---------------------------------- */
+
+.about-section {
+
+    width: 100%;
+
+    padding: 120px 8%;
+
+    background-color: #f8f8f8;
+
+}
+
+
+/* ----------------------------------
+   03.2 SECTION HEADING
+---------------------------------- */
+
+.about-heading {
+
+    margin-bottom: 70px;
+
+}
+
+
+.about-label {
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    color: #888888;
+
+}
+
+
+.about-heading h2 {
+
+    margin-top: 20px;
+
+    font-size: clamp(45px, 5vw, 65px);
+
+    font-weight: 700;
+
+    line-height: 1.1;
+
+    letter-spacing: -3px;
+
+    color: #111111;
+
+}
+
+
+.about-heading h2 span {
+
+    color: #999999;
+
+}
+
+
+/* ----------------------------------
+   03.3 ABOUT CONTENT
+---------------------------------- */
+
+.about-content {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    margin-bottom: 85px;
+
+}
+
+
+/* LEFT CONTENT */
+
+.about-left p {
+
+    max-width: 600px;
+
+    font-size: 21px;
+
+    font-weight: 500;
+
+    line-height: 1.8;
+
+    color: #111111;
+
+}
+
+
+/* RIGHT CONTENT */
+
+.about-right p {
+
+    max-width: 550px;
+
+    font-size: 14px;
+
+    line-height: 2;
+
+    color: #777777;
+
+}
+
+
+/* ABOUT BUTTON */
+
+.about-btn {
+
+    display: inline-block;
+
+    margin-top: 28px;
+
+    padding: 13px 24px;
+
+    border: 1px solid #111111;
+
+    color: #111111;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: all 0.3s ease;
+
+}
+
+
+/* BUTTON HOVER */
+
+.about-btn:hover {
+
+    background-color: #111111;
+
+    color: #ffffff;
+
+    transform: translateY(-3px);
+
+}
+
+
+/* ----------------------------------
+   03.4 INFORMATION CARDS
+---------------------------------- */
+
+.about-info {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    border-top: 1px solid #dddddd;
+
+}
+
+
+/* INDIVIDUAL CARD */
+
+.info-card {
+
+    position: relative;
+
+    padding: 45px 20px 20px 0;
+
+    border-bottom: 1px solid #dddddd;
+
+    transition: all 0.3s ease;
+
+}
+
+
+/* CARD NUMBER */
+
+.card-number {
+
+    display: block;
+
+    margin-bottom: 20px;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    color: #aaaaaa;
+
+}
+
+
+/* CARD HEADING */
+
+.info-card h3 {
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    color: #111111;
+
+}
+
+
+/* CARD DESCRIPTION */
+
+.info-card p {
+
+    margin-top: 10px;
+
+    font-size: 12px;
+
+    color: #888888;
+
+}
+
+
+/* CARD HOVER */
+
+.info-card:hover {
+
+    transform: translateY(-6px);
+
+}
+
+
+/* =====================================================
+   END OF SECTION 03
+===================================================== */
+
+
+
+/* =====================================================
+   SECTION 04: OSHO LIFE JOURNEY
+===================================================== */
+
+
+/* ----------------------------------
+   04.1 MAIN SECTION
+---------------------------------- */
+
+.journey-section {
+
+    width: 100%;
+
+    padding: 120px 8%;
+
+    background-color: #ffffff;
+
+}
+
+
+/* ----------------------------------
+   04.2 SECTION HEADING
+---------------------------------- */
+
+.journey-heading {
+
+    margin-bottom: 80px;
+
+}
+
+
+.journey-label {
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    color: #999999;
+
+}
+
+
+.journey-heading h2 {
+
+    margin-top: 20px;
+
+    font-size: clamp(45px, 5vw, 65px);
+
+    font-weight: 700;
+
+    line-height: 1.1;
+
+    letter-spacing: -3px;
+
+    color: #111111;
+
+}
+
+
+.journey-heading h2 span {
+
+    color: #999999;
+
+}
+
+
+.journey-heading p {
+
+    max-width: 450px;
+
+    margin-top: 20px;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    color: #777777;
+
+}
+
+
+/* ----------------------------------
+   04.3 MAIN GRID LAYOUT
+---------------------------------- */
+
+.journey-layout {
+
+    display: grid;
+
+    grid-template-columns: 1.3fr 0.8fr;
+
+    gap: 70px;
+
+    align-items: start;
+
+}
+
+
+/* ----------------------------------
+   04.4 TIMELINE
+---------------------------------- */
+
+.timeline {
+
+    position: relative;
+
+    width: 100%;
+
+}
+
+
+/* VERTICAL LINE */
+
+.timeline::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 115px;
+
+    top: 8px;
+
+    bottom: 75px;
+
+    width: 1px;
+
+    background-color: #dddddd;
+
+}
+
+
+/* TIMELINE ITEM */
+
+.timeline-item {
+
+    display: grid;
+
+    grid-template-columns: 100px 30px 1fr;
+
+    position: relative;
+
+    padding-bottom: 65px;
+
+}
+
+
+/* YEAR */
+
+.timeline-year {
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    color: #111111;
+
+}
+
+
+/* TIMELINE DOT */
+
+.timeline-dot {
+
+    width: 13px;
+
+    height: 13px;
+
+    margin-top: 6px;
+
+    border-radius: 50%;
+
+    background-color: #111111;
+
+    border: 3px solid #ffffff;
+
+    box-shadow: 0 0 0 1px #111111;
+
+    z-index: 2;
+
+    justify-self: center;
+
+    transition: 0.3s ease;
+
+}
+
+
+/* TIMELINE CONTENT */
+
+.timeline-content {
+
+    padding-left: 25px;
+
+    transition: 0.3s ease;
+
+}
+
+
+.timeline-content span {
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: #999999;
+
+}
+
+
+.timeline-content h3 {
+
+    margin: 12px 0;
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+    color: #111111;
+
+}
+
+
+.timeline-content p {
+
+    max-width: 450px;
+
+    font-size: 13px;
+
+    line-height: 1.9;
+
+    color: #777777;
+
+}
+
+
+/* TIMELINE HOVER */
+
+.timeline-item:hover .timeline-dot {
+
+    background-color: #999999;
+
+    box-shadow: 0 0 0 5px #eeeeee;
+
+}
+
+
+.timeline-item:hover .timeline-content {
+
+    transform: translateX(6px);
+
+}
+
+
+/* ----------------------------------
+   04.5 FEATURED CARD
+---------------------------------- */
+
+.journey-featured {
+
+    width: 100%;
+
+    max-width: 480px;
+
+    justify-self: end;
+
+    position: sticky;
+
+    top: 30px;
+
+    overflow: hidden;
+
+    background-color: #f8f8f8;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 12px;
+
+    transition: 0.4s ease;
+
+}
+
+
+.journey-featured:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+
+        0 15px 40px rgba(0,0,0,0.08);
+
+}
+
+
+/* ----------------------------------
+   04.6 FEATURED IMAGE
+---------------------------------- */
+
+.featured-image {
+
+    width: 100%;
+
+    height: 420px;
+
+    overflow: hidden;
+
+}
+
+
+.featured-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center 10%;
+
+    transition: transform 0.5s ease;
+
+}
+
+
+/* IMAGE HOVER */
+
+.journey-featured:hover .featured-image img {
+
+    transform: scale(1.04);
+
+}
+
+
+/* ----------------------------------
+   04.7 FEATURED CONTENT
+---------------------------------- */
+
+.featured-content {
+
+    padding: 30px;
+
+}
+
+
+.featured-content > span {
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: #999999;
+
+}
+
+
+.featured-content h3 {
+
+    margin: 12px 0 5px;
+
+    font-size: 35px;
+
+    font-weight: 700;
+
+    color: #111111;
+
+}
+
+
+.featured-content p {
+
+    font-size: 13px;
+
+    color: #777777;
+
+}
+
+
+/* ----------------------------------
+   04.8 FEATURED DETAILS
+---------------------------------- */
+
+.featured-details {
+
+    display: flex;
+
+    gap: 65px;
+
+    margin-top: 30px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #dddddd;
+
+}
+
+
+.featured-details h4 {
+
+    font-size: 20px;
+
+    color: #111111;
+
+}
+
+
+.featured-details small {
+
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 12px;
+
+    color: #888888;
+
+}
+
+
+/* =====================================================
+   END OF SECTION 04
+===================================================== */
+
+
+
+/* =========================================
+   SECTION 05: OSHO QUOTES
+========================================= */
+
+.quotes-section {
+    padding: 120px 8%;
+    background: #f8f8f8;
+}
+
+
+/* 05.1 Section Heading */
+
+.quotes-heading {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.quotes-heading span {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #999;
+}
+
+.quotes-heading h2 {
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 400;
+    margin: 18px 0;
+    color: #222;
+}
+
+.quotes-heading h2 em {
+    color: #a47c5c;
+    font-family: Georgia, serif;
+}
+
+.quotes-heading p {
+    font-size: 14px;
+    color: #777;
+}
+
+
+/* 05.2 Masonry Grid */
+
+.quotes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 180px);
+    gap: 15px;
+}
+
+
+/* 05.3 Common Cards */
+
+.quote-box {
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.quote-box:hover {
+    transform: translateY(-5px);
+}
+
+.quote-box p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555;
+}
+
+
+/* 05.4 Card Backgrounds */
+
+.quote-light {
+    background: #f2eee8;
+}
+
+.quote-gray {
+    background: #eeeeee;
+}
+
+.quote-green {
+    background: #e1e4d2;
+}
+
+
+/* 05.5 Image Cards */
+
+.quote-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.quote-image:nth-child(2) img {
+    object-position: center 30%;
+}
+
+.quote-image.second-image img {
+    object-position: center top;
+    object-position: center 20%;
+
+}
+
+.quote-image {
+    padding: 0;
+}
+
+
+/* 05.6 Featured Quote */
+
+.featured-quote {
+    grid-column: 4;
+    grid-row: 1 / 3;
+
+    background: #a8795c;
+    border-radius: 10px;
+    padding: 35px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    color: white;
+}
+
+.featured-quote > span {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #eadbd0;
+}
+
+.featured-quote h3 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.quote-author {
+    border-bottom: 1px solid #d1b6a4;
+    padding-bottom: 12px;
+}
+
+.quote-author h4 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.quote-author p {
+    font-size: 11px;
+    margin-top: 5px;
+    color: #eadbd0;
+}
+
+
+/* 05.7 Responsive Design */
+
+@media (max-width: 900px) {
+
+    .quotes-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .quote-box {
+        min-height: 180px;
+    }
+
+    .featured-quote {
+        grid-column: span 2;
+        grid-row: auto;
+        min-height: 280px;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .quotes-section {
+        padding: 80px 6%;
+    }
+
+    .quotes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-quote {
+        grid-column: auto;
+    }
+
 }
