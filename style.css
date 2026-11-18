@@ -1673,3 +1673,177 @@ body {
     }
 
 }
+
+
+
+
+/* =====================================================
+   SECTION 08: OSHO GALLERY
+===================================================== */
+
+
+/* 08.1 Main Section */
+
+.gallery-section {
+    padding: 120px 8%;
+    background: #ffffff;
+}
+
+
+/* 08.2 Section Heading */
+
+.gallery-heading {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.gallery-heading span {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #999;
+}
+
+.gallery-heading h2 {
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 400;
+    color: #222;
+    margin: 18px 0;
+}
+
+.gallery-heading h2 em {
+    font-family: Georgia, serif;
+    color: #a47c5c;
+}
+
+.gallery-heading p {
+    font-size: 14px;
+    color: #777;
+}
+
+
+/* 08.3 Gallery Grid */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 180px;
+    gap: 20px;
+}
+
+
+/* 08.4 Gallery Items */
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    grid-row: span 2;
+    cursor: pointer;
+}
+
+.gallery-item.gallery-tall {
+    grid-row: span 3;
+}
+
+
+/* 08.5 Gallery Images */
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+
+.gallery-item:nth-child(2) img {
+    object-position: center top;
+}
+
+
+.gallery-item:nth-child(6) img {
+    object-position: top;
+}
+
+.gallery-item:nth-child(4) img {
+    object-position: center top;
+}
+
+
+.gallery-item:nth-child(5) img {
+    object-position:center top;
+}
+
+.gallery-item:nth-child(3) img {
+    object-position: center top;
+}
+/* Image Hover */
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+
+/* 08.6 Image Overlay */
+
+.gallery-overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 22px;
+
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.55),
+        transparent 50%
+    );
+
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-overlay span {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+
+/* 08.7 Responsive Design */
+
+@media (max-width: 768px) {
+
+    .gallery-section {
+        padding: 90px 6%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 160px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 280px;
+    }
+
+    .gallery-item,
+    .gallery-item.gallery-tall {
+        grid-row: span 1;
+    }
+
+}
